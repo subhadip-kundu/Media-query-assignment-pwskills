@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .grid-item {
+      height: 150px;
+      text-align: center;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .item-1 {
+      background-color: #ff4500;
+      color: #fff;
+    }
+
+    .item-2 {
+      background-color: #008000;
+      color: #fff;
+    }
+
+    .item-3 {
+      background-color: blue;
+      color: #fff;
+    }
+
+    .item-4 {
+      background-color: orange;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item item-1">Box 1</div>
+  <div class="grid-item item-2">Box 2</div>
+  <div class="grid-item item-3">Box 3</div>
+  <div class="grid-item item-4">Box 4</div>
+</div>
+
+</body>
+</html>

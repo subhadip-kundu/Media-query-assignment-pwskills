@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    height: 6rem;
+}
+
+main,footer{
+    padding: 2rem 1rem;
+}
+
+
+
+@media screen and (max-width: 600px){
+    header{
+        background-color: blue;
+        color: #eee;
+    }
+}
